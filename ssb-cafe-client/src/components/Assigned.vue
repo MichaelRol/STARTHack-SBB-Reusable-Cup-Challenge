@@ -30,11 +30,17 @@
 </template>
 
 <script>
+import router from '../router'
+
 export default {
   name: 'Assigned',
   data () {
     return {
-
+    }
+  },
+  methods: {
+    test () {
+      router.push({ name: 'cupscan' })
     }
   }
 }
