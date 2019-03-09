@@ -18,8 +18,11 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">
-            Scan user QR code
+            Cup #0729460 assigned to Mark Nicholl
           </h1>
+          <a class="button is-primary is-inverted">
+            <span>Next Customer</span>
+          </a>
         </div>
       </div>
     </section>
@@ -28,7 +31,7 @@
 
 <script>
 export default {
-  name: 'UserScan',
+  name: 'Assigned',
   data () {
     return {
 

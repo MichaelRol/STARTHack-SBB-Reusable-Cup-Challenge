@@ -1,28 +1,40 @@
 <template>
   <body>
+
     <section class="hero is-primary">
       <div class="hero-head">
         <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
+          <div class="navbar-brand">
+            <div class="navbar-start">
               <a class="navbar-item">
                 <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
               </a>
+            </div>
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted">
+                  <span>Home</span>
+                </a>
+              </span>
             </div>
           </div>
         </nav>
       </div>
     </section>
+
     <section class="section">
-      <div class="container">
-        <h1 class="title">
-          Hello World
-        </h1>
-        <p class="subtitle">
-          My first website with <strong>Bulma</strong>!
+      <div class="container has-text-centered">
+        <p class="content is-large">
+          Currently serving: Mark Nicholl
         </p>
+        <p class="content is-medium">
+          Mark's available cups: 2 cups
+        </p>
+        <a class="button is-primary is-fullwidth" style="margin-bottom: 1em">Use cup</a>
+        <a class="button is-primary is-fullwidth">Buy new cup</a>
       </div>
     </section>
+
   </body>
 </template>
 
