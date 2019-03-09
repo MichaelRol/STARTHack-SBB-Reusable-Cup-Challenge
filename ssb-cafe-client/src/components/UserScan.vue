@@ -7,7 +7,7 @@
           <div class="navbar-brand">
             <div class="navbar-start">
               <a class="navbar-item" v-on:click="goHome()">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                <img src="../assets/CafeLogo.png" style="width: 80px; height: 200px;" alt="Logo">
               </a>
             </div>
           </div>

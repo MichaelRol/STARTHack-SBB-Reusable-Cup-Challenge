@@ -3,7 +3,7 @@
     <section class="hero is-primary is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <img src="../assets/LogoInverted.png" alt="Logo">
+          <img src="../assets/NewLogoInverted.png" alt="Logo">
           <div class="section">
             <a class="button is-primary is-outlined is-inverted is-fullwidth is-rounded" style="margin-bottom: 1em" v-on:click="goToUserScan()">Cafe</a>
             <a class="button is-primary is-outlined is-inverted is-fullwidth is-rounded">Bin</a>
@@ -33,5 +33,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-
 </style>
