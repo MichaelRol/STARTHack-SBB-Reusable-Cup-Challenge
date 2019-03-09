@@ -1,10 +1,13 @@
 <template>
   <body>
     <section class="hero is-primary is-fullheight">
-      <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered">
-          <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+          <img src="../assets/LogoInverted.png" alt="Logo">
+          <div class="section">
+            <a class="button is-primary is-outlined is-inverted is-fullwidth " style="margin-bottom: 1em">Cafe</a>
+            <a class="button is-primary is-outlined is-inverted is-fullwidth ">Bin</a>
+          </div>
         </div>
       </div>
     </section>
