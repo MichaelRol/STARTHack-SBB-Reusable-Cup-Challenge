@@ -30,7 +30,7 @@
         <p class="content is-medium">
           Mark's available cups: 2 cups
         </p>
-        <a class="button is-primary is-fullwidth" style="margin-bottom: 1em">Use cup</a>
+        <a class="button is-primary is-fullwidth" style="margin-bottom: 1em" v-on:click="goToCupScan()">Use cup</a>
         <a class="button is-primary is-fullwidth">Buy new cup</a>
       </div>
     </section>
@@ -39,11 +39,17 @@
 </template>
 
 <script>
+import router from '../router'
+
 export default {
-  name: 'Dashboard',
+  name: 'Assigned',
   data () {
     return {
-
+    }
+  },
+  methods: {
+    goToCupScan () {
+      router.push({ name: 'CupScan' })
     }
   }
 }
