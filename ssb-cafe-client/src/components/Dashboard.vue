@@ -23,15 +23,15 @@
     </section>
 
     <section class="section">
-      <div class="container">
+      <div class="container has-text-centered">
         <p class="content is-large">
           Currently serving: Mark Nicholl
         </p>
         <p class="content is-medium">
           Mark's available cups: 2 cups
         </p>
-        <a class="button is-primary">Use cup</a>
-        <a class="button is-primary">Buy new cup</a>
+        <a class="button is-primary is-fullwidth" style="margin-bottom: 1em">Use cup</a>
+        <a class="button is-primary is-fullwidth">Buy new cup</a>
       </div>
     </section>
 
