@@ -5,8 +5,8 @@
         <div class="container has-text-centered">
           <img src="../assets/LogoInverted.png" alt="Logo">
           <div class="section">
-            <a class="button is-primary is-outlined is-inverted is-fullwidth" style="margin-bottom: 1em" v-on:click="goToUserScan()">Cafe</a>
-            <a class="button is-primary is-outlined is-inverted is-fullwidth">Bin</a>
+            <a class="button is-primary is-outlined is-inverted is-fullwidth is-rounded" style="margin-bottom: 1em" v-on:click="goToUserScan()">Cafe</a>
+            <a class="button is-primary is-outlined is-inverted is-fullwidth is-rounded">Bin</a>
           </div>
         </div>
       </div>
