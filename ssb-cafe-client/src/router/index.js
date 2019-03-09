@@ -6,6 +6,7 @@ import CupScan from '@/components/CupScan'
 import Dashboard from '@/components/Dashboard'
 import Home from '@/components/Home'
 import UserScan from '@/components/UserScan'
+// import 'vue-qr-reader'
 
 Vue.use(Router)
 

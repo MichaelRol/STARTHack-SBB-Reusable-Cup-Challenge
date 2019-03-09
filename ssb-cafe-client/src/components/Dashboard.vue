@@ -6,16 +6,9 @@
         <nav class="navbar">
           <div class="navbar-brand">
             <div class="navbar-start">
-              <a class="navbar-item">
+              <a class="navbar-item" v-on:click="goHome()">
                 <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
               </a>
-            </div>
-            <div class="navbar-end">
-              <span class="navbar-item">
-                <a class="button is-primary is-inverted">
-                  <span>Home</span>
-                </a>
-              </span>
             </div>
           </div>
         </nav>
@@ -50,6 +43,9 @@ export default {
   methods: {
     goToCupScan () {
       router.push({ name: 'CupScan' })
+    },
+    goHome () {
+      router.push({ name: 'Home' })
     }
   }
 }

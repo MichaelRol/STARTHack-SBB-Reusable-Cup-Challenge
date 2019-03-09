@@ -4,9 +4,9 @@
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
         <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item">
+          <div class="navbar-brand">
+            <div class="navbar-start">
+              <a class="navbar-item" v-on:click="goHome()">
                 <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
               </a>
             </div>
@@ -27,13 +27,17 @@
 </template>
 
 <script>
-// import router from '../router'
+import router from '../router'
 
 export default {
-  name: 'UserScan',
+  name: 'Assigned',
   data () {
     return {
-
+    }
+  },
+  methods: {
+    goHome () {
+      router.push({ name: 'Home' })
     }
   }
 }
