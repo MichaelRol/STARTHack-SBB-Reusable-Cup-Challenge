@@ -3,4 +3,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="sbb_logo">SBB Logo</string>
+    <string name="Scan_Code">Scan QR Code</string>
 </resources>
