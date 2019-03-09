@@ -18,7 +18,7 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">
-            Scan user QR code
+            Scan cup QR code
           </h1>
         </div>
       </div>
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'UserScan',
+  name: 'CupScan',
   data () {
     return {
 
