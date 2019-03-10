@@ -18,7 +18,7 @@
     <section class="section">
       <div class="container has-text-centered">
         <p class="content is-large">
-          Currently serving: Mark Nicholl
+          Currently serving: {{ customer }}
         </p>
         <p class="content is-medium">
           Mark's available cups: {{ cups }} cups
@@ -36,6 +36,10 @@ import router from '../router'
 
 export default {
   name: 'Dashboard',
+  props: {
+    customer: String,
+    cups: Number
+  },
   data () {
     return {
       customer: 'Mark',
