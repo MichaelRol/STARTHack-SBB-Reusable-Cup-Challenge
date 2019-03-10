@@ -7,7 +7,7 @@
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                <img src="../assets/FinalLogo.png" alt="Logo">
               </a>
             </div>
           </div>

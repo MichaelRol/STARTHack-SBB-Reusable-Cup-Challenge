@@ -3,7 +3,7 @@
     <section class="hero is-primary is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <img src="../assets/NewLogoInverted.png" alt="Logo">
+          <img src="../assets/FinalLogo.png" alt="Logo">
           <div class="section">
             <a class="button is-primary is-outlined is-inverted is-fullwidth is-rounded" style="margin-bottom: 1em" v-on:click="goToUserScan()">Scan Customer</a>
           </div>
@@ -17,7 +17,7 @@
 import router from '../router'
 
 export default {
-  name: 'Assigned',
+  name: 'Home',
   data () {
     return {
     }

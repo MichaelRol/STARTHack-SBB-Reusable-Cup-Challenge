@@ -7,7 +7,7 @@
           <div class="navbar-brand">
             <div class="navbar-start">
               <a class="navbar-item" v-on:click="goHome()">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                <img src="../assets/FinalLogo.png" alt="Logo">
               </a>
             </div>
           </div>
@@ -21,7 +21,7 @@
           Currently serving: Mark Nicholl
         </p>
         <p class="content is-medium">
-          Mark's available cups: 2 cups
+          Mark's available cups: {{ cups }} cups
         </p>
         <a class="button is-primary is-fullwidth" style="margin-bottom: 1em" v-on:click="goToCupScan()">Use cup</a>
         <a class="button is-primary is-fullwidth">Buy new cup</a>
@@ -35,14 +35,16 @@
 import router from '../router'
 
 export default {
-  name: 'Assigned',
+  name: 'Dashboard',
   data () {
     return {
+      customer: 'Mark',
+      cups: 2
     }
   },
   methods: {
     goToCupScan () {
-      router.push({ name: 'CupScan' })
+      router.push({ name: 'CupScan', params: { customer: 'Mark', cups: 2 } })
     },
     goHome () {
       router.push({ name: 'Home' })

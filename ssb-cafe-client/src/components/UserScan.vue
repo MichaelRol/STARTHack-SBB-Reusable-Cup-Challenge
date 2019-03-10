@@ -7,7 +7,7 @@
           <div class="navbar-brand">
             <div class="navbar-start">
               <a class="navbar-item" v-on:click="goHome()">
-                <img src="../assets/CafeLogo.png" style="width: 80px; height: 200px;" alt="Logo">
+                <img src="../assets/FinalLogo.png" alt="Logo">
               </a>
             </div>
           </div>
@@ -39,7 +39,7 @@
 import router from '../router'
 
 export default {
-  name: 'Assigned',
+  name: 'UserScan',
   data () {
     return {
       result: '',

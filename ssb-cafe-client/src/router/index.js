@@ -15,22 +15,26 @@ export default new Router({
     {
       path: '/assigned',
       name: 'Assigned',
-      component: Assigned
+      component: Assigned,
+      props: true
     },
     {
       path: '/bought',
       name: 'Bought',
-      component: Bought
+      component: Bought,
+      props: true
     },
     {
       path: '/cupscan',
       name: 'CupScan',
-      component: CupScan
+      component: CupScan,
+      props: true
     },
     {
       path: '/dashboard',
       name: 'Dashboard',
-      component: Dashboard
+      component: Dashboard,
+      props: true
     },
     {
       path: '/',
@@ -40,7 +44,8 @@ export default new Router({
     {
       path: '/userscan',
       name: 'UserScan',
-      component: UserScan
+      component: UserScan,
+      props: true
     }
   ]
 })

@@ -6,8 +6,8 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+              <a class="navbar-item" v-on:click="goHome()">
+                <img src="../assets/FinalLogo.png" alt="Logo">
               </a>
             </div>
           </div>
@@ -20,8 +20,9 @@
           <h1 class="title">
             Cup #0729460 assigned to Mark Nicholl
           </h1>
-          <a class="button is-primary is-inverted">
-            <span>Next Customer</span>
+          <h2 style="margin-bottom: 1em">Mark now has {{ cups }} cup(s) left</h2>
+          <a class="button is-primary is-inverted" v-on:click="goHome()">
+            <span>Ok</span>
           </a>
         </div>
       </div>
@@ -34,11 +35,25 @@ import router from '../router'
 
 export default {
   name: 'Assigned',
+  props: {
+    customer: String,
+    cups: Number
+  },
   data () {
     return {
+      customer: this.cups,
+      cups: this.cups
+    }
+  },
+  computed: {
+    addToCups: function () {
+      return this.cups + 1
     }
   },
   methods: {
+    goHome () {
+      router.push({ name: 'Home' })
+    },
     test () {
       router.push({ name: 'cupscan' })
     }
