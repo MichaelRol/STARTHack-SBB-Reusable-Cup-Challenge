@@ -18,7 +18,7 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">
-            Cup #7294 assigned to {{ customer }}
+            Cup assigned to {{ customer }}
           </h1>
           <h2 style="margin-bottom: 1em">{{ customer }} now has {{ cups }} cup(s) left</h2>
           <a class="button is-primary is-inverted" v-on:click="goHome()">
@@ -41,7 +41,7 @@ export default {
   },
   data () {
     return {
-      customer: this.cups,
+      customer: this.customer,
       cups: this.cups
     }
   },

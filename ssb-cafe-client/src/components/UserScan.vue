@@ -62,7 +62,6 @@ export default {
     },
     onDecode (result) {
       this.result = result
-      this.customer = result
       let payload = { 'user_id': result }
       this.$http.put('https://bxmbrpyq1h.execute-api.eu-west-2.amazonaws.com/Dev/dbupdate',
         JSON.stringify(payload)
@@ -70,7 +69,7 @@ export default {
         .then((response) => {
           console.log(response)
 
-          this.cups = response.data
+          this.cups = 3
           // this.customer = JSON.parse(response).name
         })
       this.codeRead = true
