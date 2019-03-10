@@ -18,9 +18,9 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">
-            Cup #0729460 assigned to Mark Nicholl
+            Cup assigned to {{ customer }}
           </h1>
-          <h2 style="margin-bottom: 1em">Mark now has {{ cups }} cup(s) left</h2>
+          <h2 style="margin-bottom: 1em">{{ customer }} now has {{ cups }} cup(s) left</h2>
           <a class="button is-primary is-inverted" v-on:click="goHome()">
             <span>Ok</span>
           </a>
@@ -41,7 +41,7 @@ export default {
   },
   data () {
     return {
-      customer: this.cups,
+      customer: this.customer,
       cups: this.cups
     }
   },

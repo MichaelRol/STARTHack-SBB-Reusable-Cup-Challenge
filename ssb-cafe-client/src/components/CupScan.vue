@@ -49,7 +49,8 @@ export default {
       result: '',
       error: '',
       codeRead: false,
-      cups: this.cups
+      newCups: this.cups - 1
+      // cups: this.cups
     }
   },
   methods: {
@@ -63,10 +64,18 @@ export default {
       router.push({ name: 'Dashboard' })
     },
     goToAssigned () {
-      router.push({ name: 'Assigned', params: { customer: 'Mark', cups: this.cups - 1 } })
+      router.push({ name: 'Assigned', params: { customer: this.customer, cups: this.newCups } })
     },
     onDecode (result) {
       this.result = result
+      let payload = { 'cup_id': result, 'user_id': this.customer }
+
+      this.$http.post('https://bxmbrpyq1h.execute-api.eu-west-2.amazonaws.com/Dev/dbupdate',
+        JSON.stringify(payload)
+      )
+        .then((response) => {
+          console.log(response)
+        })
       this.codeRead = true
     },
     async onInit (promise) {

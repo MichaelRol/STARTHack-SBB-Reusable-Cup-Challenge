@@ -18,10 +18,10 @@
     <section class="section">
       <div class="container has-text-centered">
         <p class="content is-large">
-          Currently serving: Mark Nicholl
+          Currently serving: {{ customer }}
         </p>
         <p class="content is-medium">
-          Mark's available cups: {{ cups }} cups
+          Available cups: {{ cups }}
         </p>
         <a class="button is-primary is-fullwidth" style="margin-bottom: 1em" v-on:click="goToCupScan()">Use cup</a>
         <a class="button is-primary is-fullwidth">Buy new cup</a>
@@ -36,15 +36,19 @@ import router from '../router'
 
 export default {
   name: 'Dashboard',
+  props: {
+    customer: String,
+    cups: Number
+  },
   data () {
     return {
-      customer: 'Mark',
-      cups: 2
+      // customer: 'Mark',
+      // cups: this.cups
     }
   },
   methods: {
     goToCupScan () {
-      router.push({ name: 'CupScan', params: { customer: 'Mark', cups: 2 } })
+      router.push({ name: 'CupScan', params: { customer: this.customer, cups: this.cups } })
     },
     goHome () {
       router.push({ name: 'Home' })

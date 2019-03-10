@@ -44,7 +44,10 @@ export default {
     return {
       result: '',
       error: '',
-      codeRead: false
+      codeRead: false,
+      payload: '',
+      customer: 'Mark',
+      cups: 0
     }
   },
   methods: {
@@ -52,10 +55,23 @@ export default {
       router.push({ name: 'Home' })
     },
     goToDashboard () {
-      router.push({ name: 'Dashboard' })
+      router.push({ name: 'Dashboard', params: { customer: this.customer, cups: this.cups } })
+    },
+    serverPull () {
+
     },
     onDecode (result) {
       this.result = result
+      let payload = { 'user_id': result }
+      this.$http.put('https://bxmbrpyq1h.execute-api.eu-west-2.amazonaws.com/Dev/dbupdate',
+        JSON.stringify(payload)
+      )
+        .then((response) => {
+          console.log(response)
+
+          this.cups = 3
+          // this.customer = JSON.parse(response).name
+        })
       this.codeRead = true
     },
     async onInit (promise) {
