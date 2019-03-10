@@ -44,7 +44,8 @@ export default {
     return {
       result: '',
       error: '',
-      codeRead: false
+      codeRead: false,
+      response: ''
     }
   },
   methods: {
@@ -54,8 +55,12 @@ export default {
     goToDashboard () {
       router.push({ name: 'Dashboard' })
     },
+    serverPull () {
+
+    },
     onDecode (result) {
       this.result = result
+
       this.codeRead = true
     },
     async onInit (promise) {
