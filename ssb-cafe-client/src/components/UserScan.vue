@@ -62,14 +62,15 @@ export default {
     },
     onDecode (result) {
       this.result = result
+      this.customer = result
       let payload = { 'user_id': result }
-      this.$http.put('https://bxmbrpyq1h.execute-api.eu-west-2.amazonaws.com/Dev/dbupdate?fbclid=IwAR2fQmKVv-2Ve1742aXWatxeVUtqihuZ1J17vua3nNLUjnrYd7m_7h2t08Y',
+      this.$http.put('https://bxmbrpyq1h.execute-api.eu-west-2.amazonaws.com/Dev/dbupdate',
         JSON.stringify(payload)
       )
         .then((response) => {
           console.log(response)
 
-          this.cups = JSON.parse(response).count
+          this.cups = response.data
           // this.customer = JSON.parse(response).name
         })
       this.codeRead = true
